@@ -1,23 +1,30 @@
 [
   {
-    "objectID": "posts/nebraska-basketball-post-season-analysis/index.html",
-    "href": "posts/nebraska-basketball-post-season-analysis/index.html",
-    "title": "Nebraska Basketball hard season or something else",
-    "section": "",
-    "text": "Nebraska beats ASU. THey dominated the boards\n\n\nCode\n1+1\n\n\n[1] 2"
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Dillon’s the best around no one’s gonna take him down"
+    "text": "About this blog"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "sports_blog_1",
+    "title": "Latest posts",
     "section": "",
-    "text": "Nebraska Basketball hard season or something else\n\n\n\n\n\n\nbasketball\n\n\nncaa\n\n\ncollege\n\n\n\n\n\n\n\n\n\nApr 1, 2025\n\n\nDillon Galloway\n\n\n\n\n\n\nNo matching items"
+    "text": "Post With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nNov 3, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nOct 31, 2025\n\n\nTristan O’Malley\n\n\n\n\n\nNo matching items"
   }
 ]
