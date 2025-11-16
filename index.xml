@@ -825,19 +825,18 @@ font-style: inherit;">15</span>,<span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">wt=</span>passing_td)</span>
 <span id="cb3-8"></span>
-<span id="cb3-9"></span>
-<span id="cb3-10">  <span class="fu" style="color: #4758AB;
+<span id="cb3-9">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">ggplot</span>() <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span> </span>
-<span id="cb3-11">  <span class="fu" style="color: #4758AB;
+<span id="cb3-10">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">geom_dumbbell</span>(</span>
-<span id="cb3-12">    <span class="at" style="color: #657422;
+<span id="cb3-11">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">data=</span>top15, </span>
-<span id="cb3-13">    <span class="fu" style="color: #4758AB;
+<span id="cb3-12">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
 background-color: null;
@@ -852,24 +851,24 @@ background-color: null;
 font-style: inherit;">size =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">2</span>,</span>
-<span id="cb3-14">    <span class="at" style="color: #657422;
+<span id="cb3-13">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">color =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"grey"</span>,</span>
-<span id="cb3-15">    <span class="at" style="color: #657422;
+<span id="cb3-14">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">colour_x =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"green"</span>,</span>
-<span id="cb3-16">    <span class="at" style="color: #657422;
+<span id="cb3-15">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">colour_xend =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"red"</span>)<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb3-17">  <span class="fu" style="color: #4758AB;
+<span id="cb3-16">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">geom_text</span>(<span class="fu" style="color: #4758AB;
 background-color: null;
@@ -893,13 +892,13 @@ font-style: inherit;">"blue"</span>, <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">size=</span><span class="fl" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">3.7</span>) <span class="sc" style="color: #5E5E5E;
+font-style: inherit;">3.7</span>)<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
-<span id="cb3-18">    <span class="fu" style="color: #4758AB;
+<span id="cb3-17">    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">labs</span>(</span>
-<span id="cb3-19">    <span class="at" style="color: #657422;
+<span id="cb3-18">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">x=</span><span class="st" style="color: #20794D;
 background-color: null;
@@ -908,12 +907,12 @@ background-color: null;
 font-style: inherit;">y =</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">""</span>,</span>
-<span id="cb3-20">    <span class="at" style="color: #657422;
+<span id="cb3-19">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">title=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Dylan Raiola's Interception Rate Holds Him Back"</span>, </span>
-<span id="cb3-21">    <span class="at" style="color: #657422;
+<span id="cb3-20">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">subtitle=</span><span class="st" style="color: #20794D;
 background-color: null;
@@ -922,22 +921,22 @@ background-color: null;
 font-style: inherit;">\n</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">between scores and turnovers than most productive Power Four quarterbacks."</span>, </span>
-<span id="cb3-22">    <span class="at" style="color: #657422;
+<span id="cb3-21">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">caption=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Source: cfbfastR.sportsdataverse | By Dillon Galloway"</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span> </span>
-<span id="cb3-23">  <span class="fu" style="color: #4758AB;
+<span id="cb3-22">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">theme_minimal</span>() <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span> </span>
-<span id="cb3-24">  <span class="fu" style="color: #4758AB;
+<span id="cb3-23">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">theme</span>(</span>
-<span id="cb3-25">    <span class="at" style="color: #657422;
+<span id="cb3-24">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">plot.title =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -950,7 +949,7 @@ background-color: null;
 font-style: inherit;">face =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"bold"</span>),</span>
-<span id="cb3-26">    <span class="at" style="color: #657422;
+<span id="cb3-25">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">axis.title =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -963,7 +962,7 @@ background-color: null;
 font-style: inherit;">face =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"bold"</span>),</span>
-<span id="cb3-27">    <span class="at" style="color: #657422;
+<span id="cb3-26">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">plot.subtitle =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -972,17 +971,17 @@ background-color: null;
 font-style: inherit;">size=</span><span class="fl" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">10.9</span>), </span>
-<span id="cb3-28">    <span class="at" style="color: #657422;
+<span id="cb3-27">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">panel.grid.minor =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">element_blank</span>(),</span>
-<span id="cb3-29">    <span class="at" style="color: #657422;
+<span id="cb3-28">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">plot.title.position =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"plot"</span></span>
-<span id="cb3-30">    )</span></code></pre></div></div>
+<span id="cb3-29">    )</span></code></pre></div></div>
 </details>
 <div class="cell-output-display">
 <div>
@@ -1317,23 +1316,23 @@ font-style: inherit;">NULL</span>)</span>
 <span id="cb4-49">  )</span></code></pre></div></div>
 </details>
 <div class="cell-output-display">
-<div id="kfnnjrlsly" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#kfnnjrlsly table {
+<div id="ejkdvlybbt" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ejkdvlybbt table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#kfnnjrlsly thead, #kfnnjrlsly tbody, #kfnnjrlsly tfoot, #kfnnjrlsly tr, #kfnnjrlsly td, #kfnnjrlsly th {
+#ejkdvlybbt thead, #ejkdvlybbt tbody, #ejkdvlybbt tfoot, #ejkdvlybbt tr, #ejkdvlybbt td, #ejkdvlybbt th {
   border-style: none;
 }
 
-#kfnnjrlsly p {
+#ejkdvlybbt p {
   margin: 0;
   padding: 0;
 }
 
-#kfnnjrlsly .gt_table {
+#ejkdvlybbt .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1359,12 +1358,12 @@ font-style: inherit;">NULL</span>)</span>
   border-left-color: #D3D3D3;
 }
 
-#kfnnjrlsly .gt_caption {
+#ejkdvlybbt .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#kfnnjrlsly .gt_title {
+#ejkdvlybbt .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1376,7 +1375,7 @@ font-style: inherit;">NULL</span>)</span>
   border-bottom-width: 0;
 }
 
-#kfnnjrlsly .gt_subtitle {
+#ejkdvlybbt .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1388,7 +1387,7 @@ font-style: inherit;">NULL</span>)</span>
   border-top-width: 0;
 }
 
-#kfnnjrlsly .gt_heading {
+#ejkdvlybbt .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1400,13 +1399,13 @@ font-style: inherit;">NULL</span>)</span>
   border-right-color: #D3D3D3;
 }
 
-#kfnnjrlsly .gt_bottom_border {
+#ejkdvlybbt .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#kfnnjrlsly .gt_col_headings {
+#ejkdvlybbt .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1421,7 +1420,7 @@ font-style: inherit;">NULL</span>)</span>
   border-right-color: #D3D3D3;
 }
 
-#kfnnjrlsly .gt_col_heading {
+#ejkdvlybbt .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1441,7 +1440,7 @@ font-style: inherit;">NULL</span>)</span>
   overflow-x: hidden;
 }
 
-#kfnnjrlsly .gt_column_spanner_outer {
+#ejkdvlybbt .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1453,15 +1452,15 @@ font-style: inherit;">NULL</span>)</span>
   padding-right: 4px;
 }
 
-#kfnnjrlsly .gt_column_spanner_outer:first-child {
+#ejkdvlybbt .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#kfnnjrlsly .gt_column_spanner_outer:last-child {
+#ejkdvlybbt .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#kfnnjrlsly .gt_column_spanner {
+#ejkdvlybbt .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1473,11 +1472,11 @@ font-style: inherit;">NULL</span>)</span>
   width: 100%;
 }
 
-#kfnnjrlsly .gt_spanner_row {
+#ejkdvlybbt .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#kfnnjrlsly .gt_group_heading {
+#ejkdvlybbt .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1503,7 +1502,7 @@ font-style: inherit;">NULL</span>)</span>
   text-align: left;
 }
 
-#kfnnjrlsly .gt_empty_group_heading {
+#ejkdvlybbt .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1518,15 +1517,15 @@ font-style: inherit;">NULL</span>)</span>
   vertical-align: middle;
 }
 
-#kfnnjrlsly .gt_from_md > :first-child {
+#ejkdvlybbt .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#kfnnjrlsly .gt_from_md > :last-child {
+#ejkdvlybbt .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#kfnnjrlsly .gt_row {
+#ejkdvlybbt .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1545,7 +1544,7 @@ font-style: inherit;">NULL</span>)</span>
   overflow-x: hidden;
 }
 
-#kfnnjrlsly .gt_stub {
+#ejkdvlybbt .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1558,7 +1557,7 @@ font-style: inherit;">NULL</span>)</span>
   padding-right: 5px;
 }
 
-#kfnnjrlsly .gt_stub_row_group {
+#ejkdvlybbt .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1572,15 +1571,15 @@ font-style: inherit;">NULL</span>)</span>
   vertical-align: top;
 }
 
-#kfnnjrlsly .gt_row_group_first td {
+#ejkdvlybbt .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#kfnnjrlsly .gt_row_group_first th {
+#ejkdvlybbt .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#kfnnjrlsly .gt_summary_row {
+#ejkdvlybbt .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1590,16 +1589,16 @@ font-style: inherit;">NULL</span>)</span>
   padding-right: 5px;
 }
 
-#kfnnjrlsly .gt_first_summary_row {
+#ejkdvlybbt .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#kfnnjrlsly .gt_first_summary_row.thick {
+#ejkdvlybbt .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#kfnnjrlsly .gt_last_summary_row {
+#ejkdvlybbt .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1609,7 +1608,7 @@ font-style: inherit;">NULL</span>)</span>
   border-bottom-color: #D3D3D3;
 }
 
-#kfnnjrlsly .gt_grand_summary_row {
+#ejkdvlybbt .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1619,7 +1618,7 @@ font-style: inherit;">NULL</span>)</span>
   padding-right: 5px;
 }
 
-#kfnnjrlsly .gt_first_grand_summary_row {
+#ejkdvlybbt .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1629,7 +1628,7 @@ font-style: inherit;">NULL</span>)</span>
   border-top-color: #D3D3D3;
 }
 
-#kfnnjrlsly .gt_last_grand_summary_row_top {
+#ejkdvlybbt .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1639,11 +1638,11 @@ font-style: inherit;">NULL</span>)</span>
   border-bottom-color: #D3D3D3;
 }
 
-#kfnnjrlsly .gt_striped {
+#ejkdvlybbt .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#kfnnjrlsly .gt_table_body {
+#ejkdvlybbt .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1652,7 +1651,7 @@ font-style: inherit;">NULL</span>)</span>
   border-bottom-color: #D3D3D3;
 }
 
-#kfnnjrlsly .gt_footnotes {
+#ejkdvlybbt .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1666,7 +1665,7 @@ font-style: inherit;">NULL</span>)</span>
   border-right-color: #D3D3D3;
 }
 
-#kfnnjrlsly .gt_footnote {
+#ejkdvlybbt .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1675,7 +1674,7 @@ font-style: inherit;">NULL</span>)</span>
   padding-right: 5px;
 }
 
-#kfnnjrlsly .gt_sourcenotes {
+#ejkdvlybbt .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1689,7 +1688,7 @@ font-style: inherit;">NULL</span>)</span>
   border-right-color: #D3D3D3;
 }
 
-#kfnnjrlsly .gt_sourcenote {
+#ejkdvlybbt .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1697,72 +1696,72 @@ font-style: inherit;">NULL</span>)</span>
   padding-right: 5px;
 }
 
-#kfnnjrlsly .gt_left {
+#ejkdvlybbt .gt_left {
   text-align: left;
 }
 
-#kfnnjrlsly .gt_center {
+#ejkdvlybbt .gt_center {
   text-align: center;
 }
 
-#kfnnjrlsly .gt_right {
+#ejkdvlybbt .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#kfnnjrlsly .gt_font_normal {
+#ejkdvlybbt .gt_font_normal {
   font-weight: normal;
 }
 
-#kfnnjrlsly .gt_font_bold {
+#ejkdvlybbt .gt_font_bold {
   font-weight: bold;
 }
 
-#kfnnjrlsly .gt_font_italic {
+#ejkdvlybbt .gt_font_italic {
   font-style: italic;
 }
 
-#kfnnjrlsly .gt_super {
+#ejkdvlybbt .gt_super {
   font-size: 65%;
 }
 
-#kfnnjrlsly .gt_footnote_marks {
+#ejkdvlybbt .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#kfnnjrlsly .gt_asterisk {
+#ejkdvlybbt .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#kfnnjrlsly .gt_indent_1 {
+#ejkdvlybbt .gt_indent_1 {
   text-indent: 5px;
 }
 
-#kfnnjrlsly .gt_indent_2 {
+#ejkdvlybbt .gt_indent_2 {
   text-indent: 10px;
 }
 
-#kfnnjrlsly .gt_indent_3 {
+#ejkdvlybbt .gt_indent_3 {
   text-indent: 15px;
 }
 
-#kfnnjrlsly .gt_indent_4 {
+#ejkdvlybbt .gt_indent_4 {
   text-indent: 20px;
 }
 
-#kfnnjrlsly .gt_indent_5 {
+#ejkdvlybbt .gt_indent_5 {
   text-indent: 25px;
 }
 
-#kfnnjrlsly .katex-display {
+#ejkdvlybbt .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#kfnnjrlsly div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#ejkdvlybbt div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
