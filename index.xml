@@ -120,11 +120,11 @@ font-style: inherit;">"Nebraska Volleyball dominates sets in 2025"</span>, </spa
 background-color: null;
 font-style: inherit;">subtitle=</span><span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"The Huskers have lost just 7 sets this season after dropping 16 in 2024. Opponents aren't just losing to </span><span class="sc" style="color: #5E5E5E;
+font-style: inherit;">"The Huskers have lost just 7 sets this season after dropping 16 in 2024. Opponents aren't just losing </span><span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">\n</span><span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">Nebraska anymore, they're barely staying competitive."</span>) <span class="sc" style="color: #5E5E5E;
+font-style: inherit;">to Nebraska anymore, they're barely staying competitive."</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span> </span>
 <span id="cb1-19">   <span class="fu" style="color: #4758AB;
@@ -770,7 +770,9 @@ font-style: inherit;">25</span>, .<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">30</span>, .<span class="dv" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">35</span>), <span class="at" style="color: #657422;
+font-style: inherit;">35</span>, .<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">40</span>), <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">limits=</span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -778,7 +780,7 @@ font-style: inherit;">c</span>(.<span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">15</span>, .<span class="dv" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">36</span>)) <span class="sc" style="color: #5E5E5E;
+font-style: inherit;">4</span>)) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span></span>
 <span id="cb3-29">  <span class="fu" style="color: #4758AB;
@@ -935,8 +937,37 @@ background-color: null;
 font-style: inherit;">+</span></span>
 <span id="cb3-53">  <span class="fu" style="color: #4758AB;
 background-color: null;
+font-style: inherit;">scale_x_continuous</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">breaks =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(.<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">15</span>, .<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">20</span>, .<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">25</span>, .<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">30</span>, .<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">35</span>, .<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">40</span>), <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">limits=</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(.<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">15</span>, .<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb3-54">  <span class="fu" style="color: #4758AB;
+background-color: null;
 font-style: inherit;">labs</span>(</span>
-<span id="cb3-54">    <span class="at" style="color: #657422;
+<span id="cb3-55">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">x=</span><span class="st" style="color: #20794D;
 background-color: null;
@@ -945,22 +976,22 @@ background-color: null;
 font-style: inherit;">y=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">""</span>, </span>
-<span id="cb3-55">    <span class="at" style="color: #657422;
+<span id="cb3-56">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">title=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">""</span>) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span> </span>
-<span id="cb3-56">  <span class="fu" style="color: #4758AB;
+<span id="cb3-57">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">theme_minimal</span>() <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span> </span>
-<span id="cb3-57">  <span class="fu" style="color: #4758AB;
+<span id="cb3-58">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">theme</span>(</span>
-<span id="cb3-58">    <span class="at" style="color: #657422;
+<span id="cb3-59">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">plot.title =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -973,7 +1004,7 @@ background-color: null;
 font-style: inherit;">face =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"bold"</span>),</span>
-<span id="cb3-59">    <span class="at" style="color: #657422;
+<span id="cb3-60">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">axis.title =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -986,7 +1017,7 @@ background-color: null;
 font-style: inherit;">face =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"bold"</span>), </span>
-<span id="cb3-60">    <span class="at" style="color: #657422;
+<span id="cb3-61">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">plot.subtitle =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -995,48 +1026,48 @@ background-color: null;
 font-style: inherit;">size=</span><span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">11</span>), </span>
-<span id="cb3-61">    <span class="at" style="color: #657422;
+<span id="cb3-62">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">panel.grid.minor =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">element_blank</span>(),</span>
-<span id="cb3-62">    <span class="at" style="color: #657422;
+<span id="cb3-63">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">plot.title.position =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"plot"</span></span>
-<span id="cb3-63">  )</span>
-<span id="cb3-64"></span>
-<span id="cb3-65">beeswarm24 <span class="sc" style="color: #5E5E5E;
+<span id="cb3-64">  )</span>
+<span id="cb3-65"></span>
+<span id="cb3-66">beeswarm24 <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span> beeswarm25 <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">+</span> </span>
-<span id="cb3-66">  <span class="fu" style="color: #4758AB;
+<span id="cb3-67">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">plot_annotation</span>(</span>
-<span id="cb3-67">    <span class="at" style="color: #657422;
+<span id="cb3-68">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">title =</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"This is a title and we need to tell a story with it"</span>,</span>
-<span id="cb3-68">    <span class="at" style="color: #657422;
+font-style: inherit;">"From Top-10 Offense to Best in the Nation"</span>,</span>
+<span id="cb3-69">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">subtitle =</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"This is the subtitle and we need to add context to the chart here."</span>,</span>
-<span id="cb3-69">    <span class="at" style="color: #657422;
+font-style: inherit;">"Nebraska jumped from .284 to .352 in hitting percentage, to claim the #1 spot nationally by a notable margin."</span>,</span>
+<span id="cb3-70">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">caption =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Source:  NCAA | By Dillon Galloway"</span></span>
-<span id="cb3-70">  ) <span class="sc" style="color: #5E5E5E;
+<span id="cb3-71">  ) <span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">&amp;</span> </span>
-<span id="cb3-71">  <span class="fu" style="color: #4758AB;
+<span id="cb3-72">  <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">theme</span>(</span>
-<span id="cb3-72">    <span class="at" style="color: #657422;
+<span id="cb3-73">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">plot.title =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -1049,7 +1080,7 @@ background-color: null;
 font-style: inherit;">face =</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"bold"</span>),</span>
-<span id="cb3-73">    <span class="at" style="color: #657422;
+<span id="cb3-74">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">axis.title =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -1058,7 +1089,7 @@ background-color: null;
 font-style: inherit;">size =</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">8</span>), </span>
-<span id="cb3-74">    <span class="at" style="color: #657422;
+<span id="cb3-75">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">plot.subtitle =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -1067,12 +1098,12 @@ background-color: null;
 font-style: inherit;">size=</span><span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">10</span>), </span>
-<span id="cb3-75">    <span class="at" style="color: #657422;
+<span id="cb3-76">    <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">panel.grid.minor =</span> <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">element_blank</span>()</span>
-<span id="cb3-76">  )</span></code></pre></div></div>
+<span id="cb3-77">  )</span></code></pre></div></div>
 </details>
 <div class="cell-output-display">
 <div>
