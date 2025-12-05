@@ -10,7 +10,555 @@
 <atom:link href="https://your-website-url.example.com/index.xml" rel="self" type="application/rss+xml"/>
 <description>A blog built with Quarto</description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Mon, 17 Nov 2025 06:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 05 Dec 2025 06:00:00 GMT</lastBuildDate>
+<item>
+  <title>Has Nebraska Volleyball Improved in 2025? From 29-2 to Perfect 30-0</title>
+  <dc:creator>Dillon Galloway</dc:creator>
+  <link>https://your-website-url.example.com/posts/has_nebraska_volleyball_improved_in_2025/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>text blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blah</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(tidyverse)</span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(waffle)</span>
+<span id="cb1-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(ggbeeswarm)</span>
+<span id="cb1-4"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(ggrepel)</span>
+<span id="cb1-5"></span>
+<span id="cb1-6"></span>
+<span id="cb1-7">vb25 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Sets won"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">90</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Sets lost"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">7</span>, <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span>)</span>
+<span id="cb1-8">vb24 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Sets won"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">87</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Sets lost"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">16</span>)</span>
+<span id="cb1-9"></span>
+<span id="cb1-10"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">iron</span>(</span>
+<span id="cb1-11"> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">waffle</span>(vb25, </span>
+<span id="cb1-12">        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">rows =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>, </span>
+<span id="cb1-13">        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">colors =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"#000000"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"#E41C38"</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"white"</span>)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> </span>
+<span id="cb1-14">   <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">labs</span>(</span>
+<span id="cb1-15">     <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">x=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"2025"</span>,</span>
+<span id="cb1-16">     <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">title=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"HEADLINE HEADLINE"</span>, </span>
+<span id="cb1-17">     <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">subtitle=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"chatter chatter."</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> </span>
+<span id="cb1-18">   <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">theme</span>(</span>
+<span id="cb1-19">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">plot.title =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">element_text</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">size =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">16</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">face =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"bold"</span>),</span>
+<span id="cb1-20">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">axis.title =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">element_text</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">size =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span>),</span>
+<span id="cb1-21">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">axis.title.y =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">element_blank</span>()</span>
+<span id="cb1-22">  ),</span>
+<span id="cb1-23"> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">waffle</span>(vb24, </span>
+<span id="cb1-24">        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">rows =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>, </span>
+<span id="cb1-25">        <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">colors =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"#000000"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"#E41C38"</span>)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb1-26">   <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">labs</span>(</span>
+<span id="cb1-27">     <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">x =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"2024</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">\n</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">1 square = sets played"</span>,</span>
+<span id="cb1-28">     <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">caption=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Source: Huskers.com | Graphic by Dillon Galloway"</span></span>
+<span id="cb1-29">     )</span>
+<span id="cb1-30">) </span></code></pre></div></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://your-website-url.example.com/posts/has_nebraska_volleyball_improved_in_2025/index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>text blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blah</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">players24 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"vb_per_set_data_2024.csv"</span>)</span>
+<span id="cb2-2">players25 <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"vb_per_set_data_2025.csv"</span>)</span>
+<span id="cb2-3"></span>
+<span id="cb2-4"></span>
+<span id="cb2-5">allvbdata<span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">bind_rows</span>(players24,players25)</span>
+<span id="cb2-6"></span>
+<span id="cb2-7">allvbdatafiltered <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> allvbdata <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb2-8">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">filter</span>(Player <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">!=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Merritt Beason (2024)"</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&amp;</span></span>
+<span id="cb2-9">           Player <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">!=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Lexi Rodriguez (2024)"</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&amp;</span></span>
+<span id="cb2-10">           Player <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">!=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Virginia Adriano (2025)"</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&amp;</span></span>
+<span id="cb2-11">           Player <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">!=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Teraya Sigler (2025)"</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&amp;</span></span>
+<span id="cb2-12">           Player <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">!=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Skyler Pierce (2025)"</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&amp;</span></span>
+<span id="cb2-13">           Player <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">!=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Manaia Ogbechie (2025)"</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&amp;</span></span>
+<span id="cb2-14">           Player <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">!=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Lindsay Krause (2024)"</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&amp;</span></span>
+<span id="cb2-15">           Player <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">!=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Leyla Blackwell (2024)"</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&amp;</span></span>
+<span id="cb2-16">           Player <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">!=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Kennedi Orr (2024)"</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&amp;</span></span>
+<span id="cb2-17">           Player <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">!=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Campbell Flynn (2025)"</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&amp;</span></span>
+<span id="cb2-18">           Player <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">!=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Allie Sczech (2025)"</span> </span>
+<span id="cb2-19">)</span>
+<span id="cb2-20"></span>
+<span id="cb2-21">vblong <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> allvbdatafiltered <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb2-22">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">select</span>(Player, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">K/S</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">SA/S</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">DIG/S</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb2-23">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">arrange</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">desc</span>(Player))<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span id="cb2-24">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pivot_longer</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">cols =</span> <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>Player, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">names_to =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"stat"</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">values_to =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"total"</span>)</span>
+<span id="cb2-25"></span>
+<span id="cb2-26"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ggplot</span>()<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb2-27">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_bar</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">data =</span> vblong, <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">x=</span>Player, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">weight=</span>total, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">fill =</span> stat)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb2-28">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">scale_fill_manual</span>(</span>
+<span id="cb2-29">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">values =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"#E41C38"</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"green"</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"#000000"</span>),</span>
+<span id="cb2-30">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">name=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Per Set Stats"</span>,</span>
+<span id="cb2-31">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">labels=</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Digs"</span>,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Kills"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Aces"</span>)</span>
+<span id="cb2-32">    )<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb2-33">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">scale_y_continuous</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">breaks =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>,<span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1.5</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2</span>,<span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">2.5</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3</span>,<span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3.5</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4</span>,<span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">4.5</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5</span>,<span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">5.5</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6</span>,<span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">6.5</span>,<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">7</span>))<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb2-34">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">coord_flip</span>()<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span></span>
+<span id="cb2-35">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">labs</span>(</span>
+<span id="cb2-36">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">x=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">""</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">y =</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">""</span>,</span>
+<span id="cb2-37">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">title=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">""</span>, </span>
+<span id="cb2-38">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">subtitle=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">""</span>, </span>
+<span id="cb2-39">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">caption=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Source: Huskers.com | By Dillon Galloway"</span>) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> </span>
+<span id="cb2-40">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">theme_minimal</span>() <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> </span>
+<span id="cb2-41">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">theme</span>(</span>
+<span id="cb2-42">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">plot.title =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">element_text</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">size =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">17</span>, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">face =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"bold"</span>),</span>
+<span id="cb2-43">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">axis.title =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">element_text</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">size =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10</span>,<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">face =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"bold"</span>),</span>
+<span id="cb2-44">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">plot.subtitle =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">element_text</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">size=</span><span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">10.9</span>), </span>
+<span id="cb2-45">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">panel.grid.minor =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">element_blank</span>(),</span>
+<span id="cb2-46">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">plot.title.position =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"plot"</span></span>
+<span id="cb2-47">    )</span></code></pre></div></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://your-website-url.example.com/posts/has_nebraska_volleyball_improved_in_2025/index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>text blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blah</p>
+<p>text blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blahtext blah text blah text blahtext blah text blah text blah text blah text blah text blah text blah text blah text blah</p>
+
+
+
+ ]]></description>
+  <category>volleyball</category>
+  <category>stats</category>
+  <category>college</category>
+  <guid>https://your-website-url.example.com/posts/has_nebraska_volleyball_improved_in_2025/</guid>
+  <pubDate>Fri, 05 Dec 2025 06:00:00 GMT</pubDate>
+  <media:content url="https://your-website-url.example.com/posts/has_nebraska_volleyball_improved_in_2025/post_one_image.png" medium="image" type="image/png"/>
+</item>
 <item>
   <title>Dylan Raiola-Work In Progress</title>
   <dc:creator>Dillon Galloway</dc:creator>
